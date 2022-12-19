@@ -38,9 +38,10 @@ useEffect(() => {
   if (tours.length === 0) {
     return (
       <main>
-        <div className='title'>
-          <h2>no tours left</h2>
-          <button className='btn' onClick={fetchTours}>
+        <div className='flex flex-col items-center mt-40'>
+          <h2 className='text-xl font-bold'>no tours left</h2>
+          <button className='mt-5 rounded-2xl text-red-900 px-6
+          border border-red-900 hover:bg-red-900 hover:text-white' onClick={fetchTours}>
             refresh
           </button>
         </div>
